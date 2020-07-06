@@ -1,8 +1,8 @@
 const Navbar = () => {
-	return (
-	<div className="navbar-wrapper">
-      	<nav className="navbar navbar-expand-lg navbar-dark fj-mw9">
-        <a className="navbar-brand mr-3 font-weight-bold" href="#">Igor Marcikic</a>
+  return (
+    <div className="navbar-wrapper">
+      <nav className="navbar navbar-expand-lg navbar-dark fj-mw9">
+        <a className="navbar-brand mr-3 font-weight-bold" href="/">Igor Marcikic</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -33,8 +33,8 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
-	)
-	
+  )
+
 }
 
 export default Navbar;

@@ -1,4 +1,14 @@
-const Portfolios = () => {
+const apiCall = () => {
+	return new Promise((res, rej) => {
+		setTimeout(()=>{
+			res({testingData: 'Some data'})
+		}, 3000)
+	})
+}
+
+const Portfolios = (props) => {
+
+	console.log(props)
 	return (
 		<>
 			<div className="container">
@@ -52,6 +62,15 @@ const Portfolios = () => {
 			</div>
 		</>
 	)
+};
+
+export const getServerSideProps = async () =>{
+	const data = await apiCall();
+	return {
+		props: {
+			data: {...data}
+		}
+	}
 };
 
 export default Portfolios;
